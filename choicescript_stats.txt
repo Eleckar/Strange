@@ -1,0 +1,8 @@
+*stat_chart
+	text Name
+	text Gender
+	text Haircolor
+	percent Strength
+	percent Intelligence
+	percent Creativity
+	

@@ -1,0 +1,86 @@
+﻿*title A Strange Birthday
+*author Eleckar
+*scene_list
+	The Strange Beginnings
+	Thankyou
+
+*Comment The Dramatic Rising Actions
+*Comment The Horrid Climaxes
+*Comment The Unexpected Endings
+*Comment Thank You For Playing!
+
+*create name "Name"
+*create haircolor "Haircolor" 
+*create gender "Gender"
+*create C 1
+*Comment C 1 = Ash, C 2 = Max
+*create Strength 50
+*create Intelligence 50
+*create Creativity 50
+*create surrounding ""
+*Comment the surrounding will determine what the environment will be at the end of the protagonist's story - Cave or Clean
+
+*create ON "OtherName"
+*create OG "OtherGender"
+*create OS 50
+*create OI 50
+*create OC 50
+*Create OCl 0
+*Create MCl 0
+*Comment O_ = Other character (Ash or Max) stats; functions similarly to protagonist stats.
+*Comment OCl = How close the other character is to the protagonist; the higher the number the more the person is willing to protect the protagonist.
+*Comment MCl = How close Max's mother is to the protagonist; the higher the number the more the person is willing to protect the protagonist.
+
+*Create Drink 0
+
+Before we begin, would you like some backstory on the creation of this game?
+*Choice
+	#That would be lovely!
+		Awesome! So, where to begin? Beginnings are always quite difficult, I find.
+
+		Oh, yes. Let us start with the “why”. The “why” is actually quite simple, come to think of it. It’s mainly a product of demand, in my case. That doesn’t answer the question; well shoot. Why? For my advanced computers class, I was tasked with demonstrating my knowledge of the topic I chose at the beginning of the year. The topic being game development, I obviously had to develop a game. With the deadline set for the end of November, I didn’t have time to learn a complicated engine, so I chose ChoiceScript. Although it still has a learning curve, I don’t have to worry about graphics. Well, to an extent I do. But I digress.
+
+		What’s next? Oh, right. Of course! The next part of the “why”. Maybe the “why” is more difficult than I initially thought, haha. Yes, yes, I’m moving my way towards answering the question. Now? Well, if you insist. The title of this game is “A Strange Birthday”. Yes, it really is. No, you’re going to have to play the game to find out why it’s called that. I assure you, it truly is a strange birthday. Alright, fine, I’ll cave in a little bit. The title is one I have used in the past- several times, actually! I keep reworking this same story over and over again, and I must say it’s gotten decently good. So, with my best story in hand, I took off to Choicescript to try and adapt it into a story with multiple outcomes and paths instead of one, set one. Large task, that, as it turns out.
+
+		Now then, I’d like to take a moment to tell you that this game is not complete! Only the intro and exposition has been uploaded, actually. Nonetheless, please feel free to enjoy the three thousand words that I do have finished!
+
+		I hope I answered your questions; however, I’m aware that I probably didn’t. Never was the best explainer; I’m more or less a creative thinker instead of a logical one. So, if you have any questions remaining, be sure to shoot me an email at EleckarGames@gmail.com! 
+		Now then, without further ado, let us get started!
+		*goto Intro
+	#Haha, no thanks.
+		Fair enough. Let's get straight into this, then!
+		*goto Intro
+		
+*label Intro
+*page_break Hmm? Hmm!
+Looky there, another face! What brings you here, traveler? Ah, I see… you wish to hear about the story of the strange birthday? Why does no one want to hear about the gerbil who gets eaten by a dragon? Eh, anyways…
+
+Huh, that’s interesting. This story seems to have two perspectives! One told by the mystical Ash… and another told by one named Max? Who’s Max? Interesting…
+
+Well, don’t just stand there! Which story do you want to read?
+*Choice
+	#Ash is mystical? I think I’d like to read that one, if I may.
+		*label AshIntro
+		Well, certainly!
+		Oh, look at that! Ash tells of Max’s birthday party. 
+		
+		'Narrator continues reading "A Strange Birthday"' Well, that’s unfortunate… Are you sure you want to read Ash’s perspective?
+		*Choice
+			#On second thought, I think I’ll go with Max’s.
+				*goto MaxIntro
+			#Stop wasting my time, old man! Give me that dang story!
+				*Finish
+	#You say Ash is mystical, but what’s more mystical than the unknown? Ring me up a copy of Max’s, please!
+		*label MaxIntro
+		If you say so...
+		
+		Oh, so that’s who Max is! This one’s having a party! What fun! *Narrator continues reading*
+		
+		Alright, admittedly less fun and more dramatic than I initially thought… Are you sure you want to read Max’s perspective?
+		*Choice
+			#Actually, you deterred me. I’d prefer to read Ash’s, if you don’t mind.
+				*goto AshIntro
+			#Are you going to spoil the whole story?! I said I wanted to read Max’s, didn’t I?
+				My apologies! I do tend to ramble, yes… 
+				*set C + 1
+				*Finish Enjoy!

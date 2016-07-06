@@ -1,0 +1,204 @@
+*Comment This scene will hold the Expositions (Beginnings) for both perspectives.
+
+*if C = 1
+	*goto perAsh
+*else
+	*goto perMax
+
+*label perAsh
+My name is Ash; I have forgotten who gave me that name. I have decided to start a journal describing who I am should anyone find it if I am to die, but I don’t know where to begin. I suppose the best way to start is to gather the details about myself.
+*Choice
+	#I belong to the female gender.
+		*set gender "Female"
+		*set Intelligence +5
+		*goto Hair
+	#Men are fortunate to have one such as me among their sex.
+		*set gender "Male"
+		*set Strength +5
+		*goto Hair
+	#I choose not to label myself; in labels are responsibilities and expectancies.
+		*set gender "Classified"
+		*set Creativity +5
+		*goto Hair
+*label Hair
+My hair is truly a spectacle.
+*Choice
+	#It reminds me of the Blood Moons I loved to research; its long, curly, and auburn strands sill glisten even though I cannot remember the last time I washed them.
+		*set haircolor "Blood Moon Auburn"
+		*set Strength +5
+		*goto Surrounding
+	#Each individual hair on top of my head used to be well trimmed and managed. I am deeply distressed that my current position has ruffled and faded the brilliantly golden strands that used to accompany me.
+		*set haircolor "Golden Blonde"
+		*set Intelligence +5
+		*goto Surrounding
+	#It is the apparent remnants of a twister; it carries many different colors of varied lengths. The lack of washing has contributed to the chaos occurring inside the strands. 
+		*set haircolor "Multi-Colored Beauty"
+		*set Creativity +5
+		*goto Surrounding
+
+*label Surrounding
+I am alive, although I have no clue where I am. 
+*Choice
+	#My surroundings seem to resemble that of a cave, although that is probably just the way I chose to decorate my room all those months ago. I deeply appreciate alone time, and my room resembles it.
+		*set surrounding "Cave"
+		*set Strength +5
+		*goto ocs
+	#Most of the few, scattered objects surrounding me have little to no personal connection. I do not value earthly possessions, but instead chose to spend my time embraced by nature. It is my philosophy that one connected to nature is also connected to oneself.
+		*set surrounding "Clean"
+		*set Creativity +5
+		*goto ocs
+
+*label ocs
+My life has been ordinary as far as I can remember; then again, I can’t actually remember all that much. It seems almost impossible to pinpoint details, but I remember an individual named Max.
+*Choice
+	#He was also a male.
+		*Set OG "Male"
+		Of course, but there was more to him than masculinity.
+		*Choice
+			#This man… is difficult to describe. I think he looked a bit strange but I know I loved how his mind behaved. It was like a constant downstream of new, inventive ideas that could solve anything. At least, that’s what I tell myself.
+				*set OC +5
+				*set OCl -1
+				*goto fe
+			#He was different. Not all that clever, strong, or intelligent, but he was always there, by my side when I needed him. He would always listen to what was on my mind, and he wasn’t afraid to share what was on his.
+				*set OC -5
+				*set OS -5
+				*set OI -5
+				*set OCl +1
+				*goto fe
+			#I wish I had learned more about him. He was kind of mysterious, always standing there but not really ever saying anything. I do remember how he would encourage me to do my best, though. He was the best lucky charm I could have ever asked for.
+				*set OCl +2
+				*goto fe
+	#She was also a female.
+		*Set OG "Female"
+		That much is obvious. However, there is usually more to someone than their gender; she was no exception.
+		*Choice
+			#Although that is true, this girl is very difficult to describe. I think she looked a bit strange, but I know I loved how her mind functioned. It was like a constant downstream of new, inventive ideas that could solve anything. At least, that’s what I tell myself.
+				*set OC +5 
+				*set OCl -1
+				*goto fe
+			#She was different. Not all that clever, strong, or intelligent, but she was always there. She would always listen to what was on my mind, and she wasn’t afraid to share what was on hers. 
+				*set OC -2
+				*set OS -2
+				*set OI -2
+				*set OCl +1
+				*goto fe
+			#I wish I had learned more about her. She was kind of mysterious, always standing there but not really ever saying anything. I do remember how she would encourage me to do my best, though. She was the best lucky charm I could have ever asked for.
+				*set OCl +2
+				*goto fe
+*label fe
+I also remember one day in particular. It seems as if it’s on a continuous loop; I can’t stop pondering the smallest of details that took place.
+*page_break That's all, folks! (For Now)
+*goto_scene Thankyou
+
+
+*label perMax
+“Come down stairs, Max!” yelled Mother. “Your breakfast isn’t getting any warmer! You wouldn’t want to have a cold, bitter breakfast on such an important day, would you?”
+*Choice
+	#My mother was an annoying woman. Always pestering me with unimportant details trying to make them seem significant. It seems that today is no different.
+		After looking at my calendar, though, I feel a bit of remorse for berating my mother – it’s my birthday: the twenty second of November. I feel like I’m a little quick to pull the trigger, but that’s just how it has to be I suppose. Nonetheless, I’ve already been rudely awoken on a day off from school, so I let a “Yes, Mother,” roll out of my mouth and get out of my comfortable bed.
+		*set MCl -1
+		*goto MRelation
+	#It seems as though my mother usually has a pretty tight handle on situations, so I decided to take her advice and get out of bed to go eat some breakfast.
+		Stealing a glance at the calendar, I am glad that I trusted my mother; it’s my birthday!
+		*set MCl +1
+		*goto MRelation
+*label MRelation		
+I decide to take that moment to reflect on my relationship with Mother. 
+*Choice
+	#I’ve never had that great of a relationship with Mother. She seems a little bit too far out of this world, as though she always knows better than you and is just waiting for you to mess up so she can throw it back into your face. Especially with her husband dead, she jumps on the moments when she can feel better about herself. At least I have one person that can understand me, and this person goes by the name of Ash.
+		*set MCl -2
+		*goto Clothes
+	#My relationship with Mother can be described as mediocre, at best. Sometimes she is alright, other times not so much. As a single parent, she can only do so much to provide for me. So, I actively make an effort to avoid her and delve myself into video games. Actually, I feel like video games are a pretty decent outlet for me. They allow me to live another life, free from the hassle of everyday living. 
+		*set MCl +1
+		*goto Clothes
+	#I suppose my relationship with Mother is decent. Everyone has their flaws; I have mine, and she has hers. Regardless, I respect those with issues that they are actively trying to resolve, and she seems to go above and beyond that. With her husband dead from an overdose, her son addicted to video games, and her own issues revolving around false identity, who’s to blame her for being a tad distant?
+		*set MCl +2
+		*goto Clothes
+*label Clothes
+After finding myself lost in thought, I quickly glance at my clock to make sure I didn’t use up too much time. My wristwatch read 8:30 AM, so only a few minutes have passed since my mother called up to me. I decide that it is time to get prepared for the day, so I venture over to my closet.
+*Choice
+	#After quickly glancing into my storage of clothes, I decide that I will wear yet another outfit that is gorgeously dark, loose-fitting, and baggy. I pride myself on travelling my own paths, and my closet obviously reflects my mentality. It is important to decide what one should do for oneself, after all.
+		*set Creativity +5
+		*set Strength -5
+		*set Intelligence +2
+		*goto Gender
+	#Even though I enjoy spending my days inside, in front of the computer, I feel that it is my duty as a teenager to give just enough of a consideration to the current fashion trends so I’m not labeled an outcast. Although hypocritical, I take some time to fit myself into a pair of black skinny jeans and designer t-shirt.
+		*set Strength +5
+		*set Creativity -5
+		*goto Gender
+*label Gender
+Now that I am out of my underwear and into my outfit for the day, it is decidedly time to check myself out to determine if I was presentable for the day.
+*Choice
+	#And there’s that gorgeous female that always stares straight back at me.
+		*set gender "Female"
+		*goto Hair1
+	#Ah, yes. There you are, masculinity. I’m glad I was born male, couldn’t imagine anything less.
+		*set gender "Male"
+		*goto Hair1
+	#I chose not to label myself; in labels are responsibilities and expectancies.
+		*set gender "Classified"
+		*goto Hair1
+*label Hair1
+Now it was time to brush my hair; it's starting to look quite tangled.
+*Choice
+	#It reminds me of the Blood Moons I loved to research; its long, curly, and auburn strands have glistened for as long as I can remember.
+		*set haircolor "Blood Moon Auburn"
+		*set Strength +5
+		*set Intelligence -2
+		*goto Breakfast
+	#Each individual hair on top of my head are well trimmed and managed. The brilliantly golden strands that accompany me help me stand out from the crowd.
+		*set haircolor "Golden Blonde"
+		*set Intelligence +5
+		*goto Breakfast
+	#It is the apparent remnants of a twister; it carries many different colors of varied lengths. The lack of washing has contributed to the chaos occurring inside the strands. I don't plan on brushing  it out, actually. That would ruin my vision. 
+		*set haircolor "Multi-Colored Beauty"
+		*set Creativity +5
+		*goto Breakfast
+*label Breakfast
+“What’s for breakfast?” I asked my mother, although I already knew her answer. She always made the same thing for my birthdays, after all.
+*Choice
+	#“I made your favorite: Belgian Waffles and a glass of Orange Juice!” she replied, grinning. After all, how could you go wrong with Belgian Waffles? 
+		*set Intelligence +5
+		*set Drink +1
+		*goto O
+	#“Only the best for my number one sun! One Bacon Omelet and one refreshing cup of Chocolate milk!” Feeling risky, I decided to gamble on a Bacon Omelet. They can go two ways – up or down.
+		*set Creativity +5
+		*goto O
+*label O
+*If creativity > 60
+	Thankfully, this omelet decided to travel downwards. It actually seemed to rejuvinate me!
+	*set Strength +5
+	*goto finale
+*Else
+	Well, what else can go wrong today? I can't see much worse than vomitting.
+	*set Strength -5
+	*goto finale
+*label finale
+My mother, in her infinite wisdom, told me to finish getting ready after I had filled my stomach to its brim. 
+*Choice
+	#However, I decided that I had already prepared enough and decided to go outside against her will.
+		*set Strength +5
+		*set MCl -2
+		*Finish
+	#Following her wishes, I gave her a hug goodbye and walked back upstairs. However, all I had left to do was brush my teeth.
+		*set Intelligence +5
+		*set MCl +2
+		*goto Drink1
+*label Drink1
+*If Drink = 1
+	That orange juice was not going to thank me, though. After spitting out the last of the orange toothpaste from my saliva, I do feel rejuvenated.
+	*set Strength +5
+	*goto Games
+*Else
+	That Bacon Omelet boosted my energy tenfold, I think.
+	*set Strength +5
+	*goto Games
+*label Games
+Now, all that was left to do was spend a few hours until the party started.
+*Choice
+	#I decided to check in on my MLG team, the 'Lizards n' Bees'. They were doing fine, so I decided to spend the next few hours grinding.
+		*page_break That's all folks! (For Now)
+		*goto_scene Thankyou
+	#Although it was my birthday, I had an upcoming test in Algebra II. Deciding that it was important to study, I spent the next few hours reviewing Rational Expressions.
+		*page_break That's all folks! (For Now)
+		*goto_scene Thankyou

@@ -1,0 +1,70 @@
+I was being lectured about something I was ignorant of. Again. Of course. However, this time I wasn't about to just let any random person belittle me.
+
+Deciding to gain some leverage, and actually find out something about my attacker, I propped myself up with one hand and looked into the face of my accusator.
+
+*Choice
+	#Of course. It was the “almighty perfection”. The “fuck with me and I’ll kill you”. Lead of the prep squad, business manager of the yearbook staff, protagonist in all the school dramas. Yes, yes, yes- everyone knows you. My disdain for this one was quite obvious. Although it hurt my school standings, I stood on principle. Why bother with the ones who will only use you as a stepping stone?
+		*set Reputation -10
+		*set Intellect +5
+		And this one was
+		*Choice
+			#the mightiest amoung men.
+				Of course. Of couse he is. What's more, he insists being called one of those "hey, look at me, I'm so masculine" titles:
+					#Kadin Kracke
+					#Dylan Wilkins
+						*goto Selfsetup
+			#the most beautiful amoung women.
+				Right. Or, at least she insists that she's the "most tantalizing piece of meat you'll ever lay your unworthy eyes upon". To add upon her fame, she makes sure everyone regards her as Princess
+					#Danea
+					#Tara
+					#Brooklyn
+						*goto Selfsetup
+	#Ah, yes. The “Geek”, the “know it all”, the “why am I even here? I should definitely be in Harvard by now”. Everyone knew this one, and very few didn’t despise him. Although it was true that he was the most intelligent, he lacked principle and failed to see reason in keeping social relationships. If I stand in his way, though, he will make sure that I’m punished for it. Nonetheless, I will continue to stand on my own two feet. Why should I let this one run me into the ground?
+		*Set Reputation +5
+		*Set Intellect -10
+		And this one was
+		*Choice
+			#the smartest amoung men.			
+				Ah, yes. I remember now. As if to add to the geekiness, his parents just had to name him
+				*Choice
+					#Bertram Durwood
+					#Markoe Hansen
+					#Kordell Tibbetts
+					#Daniel Ostuni
+						*goto Selfsetup
+			#the most clever amoung women.
+				Ah, yes. I remember now. As if to add to the geekiness, her parents just had to name her
+				*Choice
+					#Kelsey Criswell
+					#Gabriele Giuliano
+						*goto Selfsetup
+	#Oh, few. It’s just the “bully”, the “nobody”, the “pathetic one looking for a way into somebody’s -anybody's- social group". This one is kind of pathetic, actually. Gazing upon this one makes me feel shameful. Even if I don’t exactly belong to any one group, at least I can say that I don’t go out of my way trying to find someone to belittle in order to make myself feel larger for the next few minutes. At least I can’t suffer any real consequence from getting on this one's bad side. Well, except the potential of getting beaten up when nobody’s looking.
+		*set Reputation +10
+		*set Strength -5
+		And this one was
+		*Choice
+			#the most pathetic amoung men.
+				Ah, yes. I remember now. To add to the shame, he had to go by the name of
+				*Choice
+					#Grue De' Neville
+					#Carver Pincheitte
+					#Steve Slyvester
+						*goto Selfsetup
+			#the greatest disgrace to the female gender.
+				Ah, yes. I remember now. To add to the shame, she had to go by the name of
+				*Choice
+					#Bigstress Sisistress
+					#Madame Maddie
+						*goto Selfsetup
+*label Selfsetup
+*page_break
+Just who was I, though? I rember being a
+*choice
+		#Freshman Male
+		#Freshman Female
+		#Sophmore Dude
+		#Sophmore Dudette
+		#Junior Mate
+		#Junior	Matestress
+		#Senior 
+			*finish
